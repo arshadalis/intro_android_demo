@@ -13,13 +13,7 @@ android:
 script:
 - "./gradlew build check --daemon"
 - "./gradlew assembleRelease"
-deploy:
-  provider: releases
-  api_key: $github_access_token
-  file: "$TRAVIS_BUILD_DIR/app/build/outputs/app-release.apk"
-  skip_cleanup: true
-  on:
-    tags: true
 
-after_success: "ls $TRAVIS_BUILD_DIR/app/build/outputs/"
+after_success:
+- echo "hello world" | mail -s "a subject" arshad.ali.sayed.15@gmail.com
 after_failure: "cat $TRAVIS_BUILD_DIR/app/build/outputs/lint-results-debug.xml"
