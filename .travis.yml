@@ -16,8 +16,8 @@ script:
 
 after_success:
 - curl --ssl-reqd \
-  --url 'smtps://smtp.gmail.com:465' \
-  --user 'arshad.ali.sayed.15@gmail.com:ifafa15gmail' \
-  --mail-from 'arshad.ali.sayed.15@gmail.com' \
-  --mail-rcpt '15.arshads@gmail.com' \
+  --url "smtps://smtp.gmail.com:465" \
+  --user "arshad.ali.sayed.15@gmail.com:ifafa15gmail" \
+  --mail-from "arshad.ali.sayed.15@gmail.com" \
+  --mail-rcpt "15.arshads@gmail.com" \
   --upload-file /home/travis/build/arshadalis/intro_android_demo/app/build/outputs/apk/release/app-release-unsigned.apk
