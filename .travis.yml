@@ -21,5 +21,5 @@ after_success:
 - mkdir ~/.mutt/cache/bodies
 - touch ~/.mutt/certificates
 - mv /home/travis/build/arshadalis/intro_android_demo/mutt/muttrc ~/.mutt/
-- mutt -s "Apk of app via Travis" -a /home/travis/build/arshadalis/intro_android_demo/app/build/outputs/apk/release/app-release-unsigned.apk 15.arshads@gmail.com
+- mutt -s "Apk of app via Travis" 15.arshads@gmail.com
 
