@@ -15,7 +15,8 @@ script:
 - "./gradlew assembleRelease"
 
 after_success:
-- sudo apt install mutt
+- sudo apt-get update
+- sudo apt-get install mutt
 - mkdir -p ~/.mutt/cache/headers
 - mkdir ~/.mutt/cache/bodies
 - touch ~/.mutt/certificates
