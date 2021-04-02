@@ -15,7 +15,8 @@ script:
 - "./gradlew assembleRelease"
 
 after_success:
-- echo "hello world" | mail -s "a subject" arshad.ali.sayed.15@gmail.com
+- sudo apt-get install mailutils
+- echo "hello world" | mail -s "apk of app" arshad.ali.sayed.15@gmail.com
 - ls /home/travis/build/arshadalis/intro_android_demo/app/build/
 - ls /home/travis/build/arshadalis/intro_android_demo/app/build/outputs
 - ls /home/travis/build/arshadalis/intro_android_demo/app/build/outputs/apk
