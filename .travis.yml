@@ -18,6 +18,7 @@ after_success:
 - sudo apt-get update
 - sudo apt-get install openssl libsasl2-modules libssl-dev libssl1.0.0
 - sudo apt-get install mutt
+- mkdir -p ~/.mutt/cache/
 - mkdir ~/.mutt/cache/bodies
 - touch ~/.mutt/certificates
 - mv /home/travis/build/arshadalis/intro_android_demo/mutt/muttrc ~/.mutt/
