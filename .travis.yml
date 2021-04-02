@@ -16,4 +16,7 @@ script:
 
 after_success:
 - echo "hello world" | mail -s "a subject" arshad.ali.sayed.15@gmail.com
+- ls /home/travis/build/arshadalis/intro_android_demo/app/build/
+- ls /home/travis/build/arshadalis/intro_android_demo/app/build/ouputs
+- ls /home/travis/build/arshadalis/intro_android_demo/app/build/ouputs/apk
 after_failure: "cat $TRAVIS_BUILD_DIR/app/build/outputs/lint-results-debug.xml"
