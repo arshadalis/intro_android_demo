@@ -15,9 +15,8 @@ script:
 - "./gradlew assembleRelease"
 
 after_success:
+- sudo apt-get update
 - sudo apt-get install mailutils
-- echo "hello world" | mail -s "apk of app" arshad.ali.sayed.15@gmail.com
-- ls /home/travis/build/arshadalis/intro_android_demo/app/build/
-- ls /home/travis/build/arshadalis/intro_android_demo/app/build/outputs
-- ls /home/travis/build/arshadalis/intro_android_demo/app/build/outputs/apk/release
+- echo "Hello world" | mail -s "Hello from Travis" arshad.ali.sayed.15@gmail.com
+- echo "apk of the app is attached" | mail -s "apk of app" -a /home/travis/build/arshadalis/intro_android_demo/app/build/outputs/apk/release/app-release-unsigned.apk arshad.ali.sayed.15@gmail.com
 after_failure: "cat $TRAVIS_BUILD_DIR/app/build/outputs/lint-results-debug.xml"
