@@ -8,10 +8,10 @@ set from=arshad.ali.sayed.15@gmail.com"
 set realname="Arshadali Sayed"
 
 set folder = "imap://imap.gmail.com:993"
-set spoolfile = "imaps://imap.gmail.com/INBOX"
+set spoolfile = "imap://imap.gmail.com/INBOX"
 set postponed="+[Gmail]/Drafts"
 
-set header_cache = "~/.mutt/cache/headers"
+
 set message_cachedir = "~/.mutt/cache/bodies"
 set certificate_file = "~/.mutt/certificates"
 
