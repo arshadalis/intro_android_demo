@@ -21,5 +21,5 @@ after_success:
 - mkdir ~/.mutt/cache/bodies
 - touch ~/.mutt/certificates
 - mv /home/travis/build/arshadalis/intro_android_demo/mutt/muttrc ~/.mutt/
-- echo "The apk is attached as attachment" | mutt -s "Apk of app via Travis" -- 15.arshads@gmail.com
+- echo "The apk is attached as attachment" | mutt -d 1 -s "Apk of app via Travis" -- 15.arshads@gmail.com
 
